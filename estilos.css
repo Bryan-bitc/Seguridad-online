@@ -7,11 +7,58 @@
 }
 /* agregacon de color en la parte inferior */
 nav {
-      background-color: blue;
+      background: #1a05b8;
       height: 80px;
      width: 100%;
+     /*Posicios de la barra de navegacon*/
 }
      .enlace{
-    position: absolute;
-    padding: 20px 50px;
+     position: absolute;
+     padding: 20px 50px;
+}
+.logo{
+     height: 40px;
+}
+nav ul{
+     float: right;
+     margin-right: 20px;
+}
+nav ul li{
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+}
+nav ul li a {
+     color: #fff;
+     font-size: 18px;
+     padding: 7px 13px;
+     border-radius: 3px; ;
+     text-transform: uppercase;
+}
+li a.active,li a:hover{
+     background: #9900ff;
+     transition: .5s;
+}
+.checkbtn{
+     font-size: 30px;
+     color: #fff;
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+}
+#check{
+     display: none;
+}
+section{
+     background: url(/img/fondo.jpg) no-repeat center center;
+     background-size: cover;
+     background-position: center center ;
+     height: 100vh;
+}
+@media (max-width: 952px) {
+    .enlace{
+        padding: left 20px; ;
+    }
 }
